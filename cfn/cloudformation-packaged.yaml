@@ -1,0 +1,7 @@
+Resources:
+  Qldb:
+    Type: AWS::QLDB::Ledger
+    Properties:
+      Name: test-qldb-ledger
+      DeletionProtection: true
+      PermissionsMode: ALLOW_ALL

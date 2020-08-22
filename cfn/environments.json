@@ -1,0 +1,8 @@
+{
+  "prod": {
+    "stackName": "qldb-test",
+    "awsProfile": "personal",
+    "stagingBucket": "kerryritter-deploy-bucket",
+    "parameters": { "womp": "1" }
+  }
+}
