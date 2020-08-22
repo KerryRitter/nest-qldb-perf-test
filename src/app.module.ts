@@ -6,13 +6,13 @@ import { SharedIniFileCredentials } from 'aws-sdk';
 @Module({
   imports: [
     NestQldbModule.forRoot({
-      qldbDriver: new QldbDriver('test-qldb-ledger', {
+      qldbDriver: new QldbDriver('test-qldb-ledger-nested', {
         region: 'us-east-1',
         credentials: new SharedIniFileCredentials({
           profile: 'personal',
         }),
       }, 10, 60000),
-      // createTablesAndIndexes: true,
+      createTablesAndIndexes: true,
     }),
   ],
   providers: [AppService],

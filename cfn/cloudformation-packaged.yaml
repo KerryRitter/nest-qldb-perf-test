@@ -5,3 +5,9 @@ Resources:
       Name: test-qldb-ledger
       DeletionProtection: true
       PermissionsMode: ALLOW_ALL
+  QldbNested:
+    Type: AWS::QLDB::Ledger
+    Properties:
+      Name: test-qldb-ledger-nested
+      DeletionProtection: true
+      PermissionsMode: ALLOW_ALL
